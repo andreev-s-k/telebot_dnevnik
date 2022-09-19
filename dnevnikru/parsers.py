@@ -44,7 +44,7 @@ class Parser:
         day = datetime.strptime(settings.DATEFROM, "%d.%m.%Y") + timedelta(days=7*weeks)
         weeks_list = []
         week = date(2021, 7, 19)
-        for _ in range(40):
+        for _ in range(90):
             week = week + timedelta(days=7)
             weeks_list.append(week.strftime("%d.%m.%Y"))
         print(weeks_list)
